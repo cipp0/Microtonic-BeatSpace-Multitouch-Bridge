@@ -1,0 +1,9 @@
+#N canvas -1687 -467 1687 521 10;
+#X obj 46 33 receive fromGUI;
+#X obj 45 176 send toNetwork;
+#X obj 350 95 list trim;
+#X obj 354 171 route touchesByTime;
+#X obj 349 123 route /myMultiTouch;
+#X connect 0 0 1 0;
+#X connect 2 0 4 0;
+#X connect 4 0 3 0;
